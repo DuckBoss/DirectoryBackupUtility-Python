@@ -1,6 +1,10 @@
 # DirectoryBackupUtility-Python
 An automatic directory backup utility made in python.
 
+[![GitHub release](https://img.shields.io/badge/Build-2.0-brightgreen.svg)](https://github.com/DuckBoss/DirectoryBackupUtility-Python/releases/latest)
+[![Packagist](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/DuckBoss/DirectoryBackupUtility-Python/blob/master/LICENSE)
+
+
 ## Features
 - Automatic directory backups every 'x' seconds.
 - Blacklist files
