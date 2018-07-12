@@ -48,7 +48,11 @@ while True:
                 verbose_print("--> Skipping detected file: %s" % file_name)
                 continue
             filePathDst = "%s/%s" % (dst_dir, file_name)
+            if os.path.exists(filePathDst):
+                verbose_print("--> File already exists: %s, skipping..." % file_name)
+                continue
             shutil.copyfile(filePathSrc, filePathDst)
+            verbose_print("--> Synced file: %s" % file_name)
         verbose_print("--> Directories synced!")
         sleep(scan_time)
         continue
